@@ -1,0 +1,151 @@
+// ===================================================
+// Breakpoints
+// ===================================================
+$bp-extra-small:  320px;
+$bp-smaller:  375px;
+$bp-small:        480px;
+$bp-medium-small: 580px; // added by ym@henkelhiedl.com
+$bp-medium:       768px;
+$bp-tablet:       1024px;
+$bp-large:        1200px;
+$bp-large-with-padding: 1235px;
+$bp-13inch-large: 1440px;
+$bp-extra-large:  1600px;
+$bp-15inch-large: 1680px;
+$bp-super-large:  2000px;
+
+/**
+ * *** how to maintain ***
+ * 1. if you add a breakpoint
+ *   - begin with $bp-
+ *   - define mixin like
+ *     - bpXxx    equal and bigger than your defined breakpoint
+ *     - bpMaxXxx smaller than your defined breakpoint
+ *   - add definition in src/lib/mixins/breakPoints.js
+ *     - definition
+ *     - computed methods like
+ *       - bpXxx    equal and bigger than your defined breakpoint
+ *       - bpMaxXxx smaller than your defined breakpoint
+ * 2. if you change a breakpoint
+ *    dont't forget to correct definition
+ *    in src/lib/mixins/breakPoints.js too
+ */
+@mixin bp ($breakpoint) {
+  @media screen and (min-width: $breakpoint + 1) {
+    @content;
+  }
+}
+
+@mixin bp-max($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin bp-from-to($bp-from, $bp-to) {
+  @media screen and (min-width: $bp-from + 1) and (max-width: $bp-to) {
+    @content;
+  }
+}
+
+@mixin bp-extra-small() {
+  @include bp($bp-extra-small) {
+    @content;
+  }
+}
+
+@mixin bp-max-extra-small() {
+  @include bp-max($bp-extra-small) {
+    @content;
+  }
+}
+
+@mixin bp-smaller() {
+  @include bp($bp-smaller) {
+    @content;
+  }
+}
+
+@mixin bp-max-smaller() {
+  @include bp-max($bp-smaller) {
+    @content;
+  }
+}
+
+@mixin bp-small() {
+  @include bp($bp-small) {
+    @content;
+  }
+}
+
+@mixin bp-max-small() {
+  @include bp-max($bp-small) {
+    @content;
+  }
+}
+
+@mixin bp-max-medium-small() {
+  @include bp-max($bp-medium-small) {
+    @content;
+  }
+}
+
+@mixin bp-medium() {
+  @include bp($bp-medium) {
+    @content;
+  }
+}
+
+@mixin bp-max-medium() {
+  @include bp-max($bp-medium) {
+    @content;
+  }
+}
+
+@mixin bp-tablet() {
+  @include bp($bp-tablet) {
+    @content;
+  }
+}
+
+@mixin bp-max-tablet() {
+  @include bp-max($bp-tablet) {
+    @content;
+  }
+}
+
+@mixin bp-large() {
+  @include bp($bp-large) {
+    @content;
+  }
+}
+
+@mixin bp-max-large() {
+  @include bp-max($bp-large) {
+    @content;
+  }
+}
+
+@mixin bp-13inch-large() {
+  @include bp($bp-13inch-large) {
+    @content;
+  }
+}
+
+@mixin bp-max-13inch-large() {
+  @include bp-max($bp-13inch-large) {
+    @content;
+  }
+}
+
+@mixin bp-extra-large() {
+  @include bp($bp-extra-large) {
+    @content;
+  }
+}
+
+@mixin bp-max-extra-large() {
+  @include bp-max($bp-extra-large) {
+    @content;
+  }
+}
