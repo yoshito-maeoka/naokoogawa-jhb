@@ -1,14 +1,16 @@
 <template>
   <div class="burger-menu">
-    <buttton @click="toggleMenu"></buttton>
+    <button @click="toggleMenu" :class="{ 'opened': visible }">
+      <span class="sr-only">toggle menu</span>
+    </button>
+    <nav class="navigation" :class="{ visible }">
+      <ul>
+        <li><a href="#the-book">the book</a></li>
+        <li><a href="#the-exhibition">the exhibition</a></li>
+        <li><a href="#shop-coming">shop coming soon</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="navigation" :class="visible">
-    <ul>
-      <li><a href="#the-book">the book</a></li>
-      <li><a href="#the-exhibition">the exhibition</a></li>
-      <li><a href="#shop-coming">shop coming soon</a></li>
-    </ul>
-  </nav>
 </template>
 
 <script lang="ts" setup>
@@ -64,15 +66,18 @@ const toggleMenu = () => {
 
 <style scoped lang="scss">
 .burger-menu {
+  position: relative;
+  padding: 20px;
 
   button {
-    position: relative;
+    position: fixed;
     cursor: pointer;
     display: block;
     width: 41px;
     height: 27px;
     border-top: 3px solid #efefef;
     border-bottom: 3px solid #efefef;
+    transition: all 0.5s;
 
     &:before {
       display: block;
@@ -83,6 +88,27 @@ const toggleMenu = () => {
       position: absolute;
       left: 0;
       top: 9px;
+      transition: all 0.5s;
+    }
+
+    &.opened {
+      transform: rotate(-45deg);
+      border-top: 0px;
+      transition: all 0.5s;
+      &:before {
+        transform: rotate(90deg);
+        top: 23px;
+        width: 41px;
+        transition: all 0.5s;
+      }
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      left: -10000px;
+      overflow: hidden;
     }
   }
 
@@ -99,6 +125,17 @@ const toggleMenu = () => {
 }
 
 .navigation {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  overflow: hidden;
+    transition: all 0.5s;
+
+  &.visible {
+    top: 0;
+    transition: all 0.5s;
+  }
+
   margin: var(--gap) 0;
   a {
     margin: 0 var(--space);
