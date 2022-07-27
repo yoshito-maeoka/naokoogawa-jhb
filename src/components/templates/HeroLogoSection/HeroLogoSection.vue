@@ -1,6 +1,6 @@
 <template>
   <div class="hero-logo-section">
-    <h1>Jewerly Hunting <span>&mdash; the book &mdash;</span></h1>
+    <h1><span class="sr-only">Jewerly Hunting &mdash; Book &mdash;</span></h1>
   </div>
 </template>
 
@@ -82,5 +82,18 @@
 </script>
 
 <style lang="scss">
-  // .hero-logo-section {}
+.hero-logo-section {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/images/top-background.jpg');
+
+  h1 {
+    background-image: url('/images/jhb-logo.svg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
 </style>

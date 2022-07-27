@@ -5,7 +5,7 @@
     </button>
     <nav class="navigation" :class="{ visible }">
       <ul>
-        <li><a href="#the-book">the book</a></li>
+        <li><a href="#the-book">Book</a></li>
         <li><a href="#the-exhibition">the exhibition</a></li>
         <li><a href="#shop-coming">shop coming soon</a></li>
       </ul>
@@ -66,11 +66,12 @@ const toggleMenu = () => {
 
 <style scoped lang="scss">
 .burger-menu {
-  position: relative;
+  position: fixed;
   padding: 20px;
+  width: 100%;
 
   button {
-    position: fixed;
+    position: relative;
     cursor: pointer;
     display: block;
     width: 41px;
@@ -102,14 +103,6 @@ const toggleMenu = () => {
         transition: all 0.5s;
       }
     }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      left: -10000px;
-      overflow: hidden;
-    }
   }
 
   @include bp-max-medium() {
@@ -129,7 +122,8 @@ const toggleMenu = () => {
   top: -100px;
   width: 100%;
   overflow: hidden;
-    transition: all 0.5s;
+  text-align: center;
+  transition: all 0.5s;
 
   &.visible {
     top: 0;

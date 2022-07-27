@@ -1,6 +1,6 @@
 <template>
+  <Navigation />
   <section class="wrapper">
-    <Navigation />
     <HeroLogoSection />
     <BookSection />
     <ExhibitionSection />
@@ -17,4 +17,8 @@ import ExhibitionSection from "@/components/templates/ExhibitionSection/Exhibiti
 import ShopComingSoon from "@/components/templates/ShopComingSoon/ShopComingSoon.vue"
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.burger-menu {
+  top: 0;
+}
+</style>
