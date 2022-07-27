@@ -1,0 +1,2 @@
+import __component__(pascalCase) from './__component__(pascalCase).vue';
+export default __component__(pascalCase);
