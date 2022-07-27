@@ -3,9 +3,11 @@
     <buttton @click="toggleMenu"></buttton>
   </div>
   <nav class="navigation" :class="visible">
-    <router-link :to="{ name: 'Home' }" title="Home">Home</router-link>
-    <router-link :to="{ name: 'Axios' }" title="Axios">Axios</router-link>
-    <router-link :to="{ name: 'About' }" title="About">About</router-link>
+    <ul>
+      <li><a href="#the-book">the book</a></li>
+      <li><a href="#the-exhibition">the exhibition</a></li>
+      <li><a href="#shop-coming">shop coming soon</a></li>
+    </ul>
   </nav>
 </template>
 
