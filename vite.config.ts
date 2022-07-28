@@ -5,7 +5,7 @@ import { join } from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: "./",
+  base: "/naokoogawa-jhb/",
   resolve: {
     alias: {
       "@": join(__dirname, "src"),

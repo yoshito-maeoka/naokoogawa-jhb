@@ -93,7 +93,12 @@
     width: 100%;
     height: 100%;
     padding: 50px;
-    background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
+    background-image: linear-gradient(
+      to bottom, 
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,0.9) 40%, 
+      rgba(255,255,255,0), 
+    );
   }
 
   h1 {
