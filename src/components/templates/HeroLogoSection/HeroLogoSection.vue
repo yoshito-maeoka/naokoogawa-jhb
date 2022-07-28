@@ -1,6 +1,8 @@
 <template>
   <div class="hero-logo-section">
-    <h1><span class="sr-only">Jewerly Hunting &mdash; Book &mdash;</span></h1>
+    <div class="cover-layer">
+      <h1><span class="sr-only">Jewerly Hunting &mdash; Book &mdash;</span></h1>
+    </div>
   </div>
 </template>
 
@@ -87,10 +89,18 @@
   height: 100vh;
   background-image: url('/images/top-background.jpg');
 
+  .cover-layer {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
+  }
+
   h1 {
     background-image: url('/images/jhb-logo.svg');
     height: 100%;
     width: 100%;
+    margin: 0;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
