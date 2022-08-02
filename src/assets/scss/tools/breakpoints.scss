@@ -1,18 +1,18 @@
 // ===================================================
 // Breakpoints
 // ===================================================
-$bp-extra-small:  320px;
-$bp-smaller:  375px;
-$bp-small:        480px;
+$bp-extra-small: 320px;
+$bp-smaller: 375px;
+$bp-small: 480px;
 $bp-medium-small: 580px; // added by ym@henkelhiedl.com
-$bp-medium:       768px;
-$bp-tablet:       1024px;
-$bp-large:        1200px;
+$bp-medium: 768px;
+$bp-tablet: 1024px;
+$bp-large: 1200px;
 $bp-large-with-padding: 1235px;
 $bp-13inch-large: 1440px;
-$bp-extra-large:  1600px;
+$bp-extra-large: 1600px;
 $bp-15inch-large: 1680px;
-$bp-super-large:  2000px;
+$bp-super-large: 2000px;
 
 /**
  * *** how to maintain ***
@@ -30,7 +30,7 @@ $bp-super-large:  2000px;
  *    dont't forget to correct definition
  *    in src/lib/mixins/breakPoints.js too
  */
-@mixin bp ($breakpoint) {
+@mixin bp($breakpoint) {
   @media screen and (min-width: $breakpoint + 1) {
     @content;
   }

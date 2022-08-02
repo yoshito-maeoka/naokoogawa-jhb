@@ -76,9 +76,8 @@
 // })
 //  :
 //  :
-
 </script>
 
 <style lang="scss">
-  // .__component__(kebabCase) {}
+// .__component__(kebabCase) {}
 </style>

@@ -8,14 +8,13 @@ body {
   color: var(--color);
   background: var(--background);
   line-height: 1;
-  &.light-theme{
+  &.light-theme {
     background: var(--background);
   }
-  &.dark-theme{
+  &.dark-theme {
     background: var(--background);
   }
 }
-
 
 // Tricks
 // ==================
@@ -23,8 +22,6 @@ body {
   background: var(--contrast);
   color: #fff;
 }
-
-
 
 // Global style
 // ==================
@@ -75,9 +72,9 @@ li {
 }
 
 a {
-  text-decoration: underline;
+  // text-decoration: underline;
   color: inherit;
-  transition: color .3s;
+  transition: color 0.3s;
   &:hover {
     color: var(--contrast);
   }

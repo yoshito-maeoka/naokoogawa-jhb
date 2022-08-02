@@ -1,7 +1,7 @@
 /**
  * Setup file for generate-templates-files script
  */
-const { generateTemplateFiles } = require('generate-template-files')
+const { generateTemplateFiles } = require('generate-template-files');
 
 // const config = require('../package.json')
 
@@ -23,65 +23,48 @@ const sharedOptions = {
   // onComplete: (results) => {
   //   console.log(`results`, results);
   // },
-}
+};
 
 /**
  * in vs code the typescript linter causes problems with the story.js template.
  * Obfuscating the js extension should hide it.
  */
-const ignoreTsError = [
-  { slot: '__jsfile__', slotValue: 'js' },
-]
+const ignoreTsError = [{ slot: '__jsfile__', slotValue: 'js' }];
 
 generateTemplateFiles([
   {
     option: 'Atom',
 
-    dynamicReplacers: [
-      { slot: '__type__', slotValue: 'atoms' },
-      ...ignoreTsError,
-    ],
+    dynamicReplacers: [{ slot: '__type__', slotValue: 'atoms' }, ...ignoreTsError],
 
     ...sharedOptions,
   },
   {
     option: 'Molecule',
 
-    dynamicReplacers: [
-      { slot: '__type__', slotValue: 'molecules' },
-      ...ignoreTsError,
-    ],
+    dynamicReplacers: [{ slot: '__type__', slotValue: 'molecules' }, ...ignoreTsError],
 
     ...sharedOptions,
   },
   {
     option: 'Organism',
 
-    dynamicReplacers: [
-      { slot: '__type__', slotValue: 'organisms' },
-      ...ignoreTsError,
-    ],
+    dynamicReplacers: [{ slot: '__type__', slotValue: 'organisms' }, ...ignoreTsError],
 
     ...sharedOptions,
   },
   {
     option: 'Template',
 
-    dynamicReplacers: [
-      { slot: '__type__', slotValue: 'templates' },
-      ...ignoreTsError,
-    ],
+    dynamicReplacers: [{ slot: '__type__', slotValue: 'templates' }, ...ignoreTsError],
 
     ...sharedOptions,
   },
   {
     option: 'Page',
 
-    dynamicReplacers: [
-      { slot: '__type__', slotValue: 'pages' },
-      ...ignoreTsError,
-    ],
+    dynamicReplacers: [{ slot: '__type__', slotValue: 'pages' }, ...ignoreTsError],
 
     ...sharedOptions,
   },
-])
+]);

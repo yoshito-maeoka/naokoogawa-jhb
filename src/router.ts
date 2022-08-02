@@ -1,22 +1,22 @@
-import { createWebHistory, createRouter } from "vue-router";
-import { RouteRecordRaw } from "vue-router";
+import { createWebHistory, createRouter } from 'vue-router';
+import { RouteRecordRaw } from 'vue-router';
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
-    alias: "/home",
-    name: "Home",
-    component: () => import("@/pages/Home.vue"),
+    path: '/',
+    alias: '/home',
+    name: 'Home',
+    component: () => import('@/pages/Home.vue'),
   },
   {
-    path: "/axios",
-    name: "Axios",
-    component: () => import("@/pages/Axios.vue"),
+    path: '/axios',
+    name: 'Axios',
+    component: () => import('@/pages/Axios.vue'),
   },
   {
-    path: "/about",
-    name: "About",
-    component: () => import("@/pages/About.vue"),
+    path: '/about',
+    name: 'About',
+    component: () => import('@/pages/About.vue'),
   },
 ];
 

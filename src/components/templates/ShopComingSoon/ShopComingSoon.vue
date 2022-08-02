@@ -78,9 +78,8 @@
 // })
 //  :
 //  :
-
 </script>
 
 <style lang="scss">
-  // .shop-coming-soon {}
+// .shop-coming-soon {}
 </style>

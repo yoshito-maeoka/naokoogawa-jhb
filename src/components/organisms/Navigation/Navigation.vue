@@ -1,6 +1,6 @@
 <template>
   <div class="burger-menu">
-    <button @click="toggleMenu" :class="{ 'opened': visible }">
+    <button @click="toggleMenu" :class="{ opened: visible }">
       <span class="sr-only">toggle menu</span>
     </button>
     <nav class="navigation" :class="{ visible }">
@@ -10,45 +10,52 @@
         <li><a href="#shop-coming">shop coming soon</a></li>
       </ul>
     </nav>
+    <ul class="languages" :class="{ language }">
+      <li>JA</li>
+      <li>EN</li>
+    </ul>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { defineComponent, onMounted, ref } from "vue";
+import { defineComponent, onMounted, ref } from 'vue';
 /* Data */
-const userTheme = ref("light-theme");
+const userTheme = ref('light-theme');
 
 /* Methods */
 function toggleTheme() {
-  const activeTheme = localStorage.getItem("user-theme");
-  if (activeTheme === "light-theme") {
-    setTheme("dark-theme");
+  const activeTheme = localStorage.getItem('user-theme');
+  if (activeTheme === 'light-theme') {
+    setTheme('dark-theme');
   } else {
-    setTheme("light-theme");
+    setTheme('light-theme');
   }
 }
 
 function setTheme(theme: string) {
-  localStorage.setItem("user-theme", theme);
+  localStorage.setItem('user-theme', theme);
   userTheme.value = theme;
   document.body.className = theme;
 }
 
 // Check windows user theme navigator
 function getMediaPreference(): string {
-  const hasDarkPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const hasDarkPreference = window.matchMedia('(prefers-color-scheme: dark)').matches;
   if (hasDarkPreference) {
-    return "dark-theme";
+    return 'dark-theme';
   } else {
-    return "light-theme";
+    return 'light-theme';
   }
 }
 
 /* Mounted, Watcher ...*/
 onMounted(() => {
   // Check local theme + windows user theme navigator and set theme
+  /*
   const windowsUserTheme = getMediaPreference();
   const localStorageTheme = localStorage.getItem("user-theme");
+  */
+  const localStorageTheme = 'light-theme';
   if (localStorageTheme) {
     setTheme(localStorageTheme);
   } else if (windowsUserTheme) {
@@ -61,7 +68,7 @@ onMounted(() => {
 const visible = ref(false);
 const toggleMenu = () => {
   visible.value = !visible.value;
-}
+};
 </script>
 
 <style scoped lang="scss">
@@ -76,8 +83,8 @@ const toggleMenu = () => {
     display: block;
     width: 41px;
     height: 27px;
-    border-top: 3px solid #efefef;
-    border-bottom: 3px solid #efefef;
+    border-top: 3px solid var(--color);
+    border-bottom: 3px solid var(--color);
     transition: all 0.5s;
 
     &:before {
@@ -85,7 +92,7 @@ const toggleMenu = () => {
       content: '';
       width: 54.88%;
       height: 3px;
-      background-color: #efefef;
+      background-color: var(--color);
       position: absolute;
       left: 0;
       top: 9px;
@@ -103,6 +110,12 @@ const toggleMenu = () => {
         transition: all 0.5s;
       }
     }
+  }
+
+  .languages {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
   @include bp-max-medium() {

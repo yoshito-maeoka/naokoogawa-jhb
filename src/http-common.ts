@@ -1,13 +1,13 @@
-import axios, { AxiosInstance, AxiosResponse } from "axios";
-import ResponseData from "@/types/ResponseData";
+import axios, { AxiosInstance, AxiosResponse } from 'axios';
+import ResponseData from '@/types/ResponseData';
 
-const baseURL = "https://api.github.com";
+const baseURL = 'https://api.github.com';
 
 const http: AxiosInstance = axios.create({
   baseURL,
   timeout: 20000,
   headers: {
-    "Content-type": "application/json",
+    'Content-type': 'application/json',
   },
 });
 
@@ -34,7 +34,7 @@ http.interceptors.response.use(
     if (status !== 200) {
       return Promise.reject({
         response,
-        message: "CustomError",
+        message: 'CustomError',
       });
     }
 

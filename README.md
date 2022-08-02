@@ -4,14 +4,9 @@ _Simple starter template for developing Vue 3 app with some often used features_
 
 💻 Vue 3 | Vite | Typescript | Vuex | ESLint | Prettier | Axios.
 
-
 ![Screen Starter][screen]
 
-
-
 ---
-
-
 
 ## 📦️ Features
 
@@ -26,11 +21,7 @@ _Simple starter template for developing Vue 3 app with some often used features_
 - Cypress.io e2e tests
 - More soon…
 
-
-
 ---
-
-
 
 ## 💾 Installation
 
@@ -41,40 +32,35 @@ _Simple starter template for developing Vue 3 app with some often used features_
 yarn
 ```
 
-
 ## 🥑 Usage / Get Started
-
 
 ```bash
 # Compiles & hot-reloads for development
 # npm run dev
-yarn dev  
+yarn dev
 
 # Or Vite preview
 # npm run serve
-yarn serve 
+yarn serve
 
 # Build & minifies for production
 # npm run build
-yarn build 
+yarn build
 
 # Lints & fixes files
 # npm run lint
-yarn lint 
+yarn lint
 
 # Prettier & format files
 # npm run format
-yarn format 
+yarn format
 ```
 
 #### Goto application
 
 App running at on [localhost](http://localhost:3000)
 
-
 ---
-
-
 
 ## 🧐 Tests
 
@@ -95,12 +81,7 @@ yarn e2e:open-ct # Open Gui Browser
 
 ![Screen Cypress][screen-cypress]
 
-
-
 ---
-
-
-
 
 ## 🐞 Bugs & contributing
 
@@ -111,15 +92,11 @@ The issue tracker is the preferred channel for bug reports, features requests an
 **Special thanks to:**
 
 | 🔥                                   |
-|--------------------------------------|
+| ------------------------------------ |
 | [![picture][flo_img]][flo]           |
 | [🧙‍♂][flo] [⌨][flo_co] [🙏][flo_pr] |
 
-
-
-
 ---
-
 
 ## 🍭 Credits
 
@@ -127,18 +104,13 @@ Originally written & currently maintained by [@Sp0ne][vinces-git] © 2021
 
 > </💻> with ❤ by **[@Sp0ne🧙‍♂][vinces]**. Have Fun 🍻
 
-
-
 ---
-
-
 
 [vinces]: https://vinces.io
 [vinces-git]: https://github.com/Sp0ne
 [screen]: public/images/screen-starter.gif
 [screen-cypress]: public/images/screen-starter-cypress.png
 [docs-github-api]: https://docs.github.com/en/rest/reference/repos#list-repositories-for-a-user
-
 [flo]: https://github.com/floyoops
 [flo_img]: https://avatars.githubusercontent.com/u/2229520?s=60&v=4
 [flo_pr]: https://github.com/Sp0ne/vue3-vite-typescript-starter/pulls?q=is%3Apr+author%3Afloyoops

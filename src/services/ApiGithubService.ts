@@ -1,6 +1,6 @@
-import http from "@/http-common";
-import RepoGithub from "@/types/RepoGithub";
-import { injectable } from "inversify";
+import http from '@/http-common';
+import RepoGithub from '@/types/RepoGithub';
+import { injectable } from 'inversify';
 
 @injectable()
 class ApiGithubService {

@@ -1,5 +1,5 @@
 const TYPES = {
-  ApiGitHubService: Symbol.for("ApiGitHubService"),
+  ApiGitHubService: Symbol.for('ApiGitHubService'),
 };
 
 export { TYPES };

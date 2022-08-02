@@ -78,9 +78,8 @@
 // })
 //  :
 //  :
-
 </script>
 
 <style lang="scss">
-  // .exhibition-section {}
+// .exhibition-section {}
 </style>

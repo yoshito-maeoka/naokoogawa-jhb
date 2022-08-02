@@ -2,14 +2,14 @@
 
 // Theme
 // ==================
-@mixin dark () {
+@mixin dark() {
   @if (&) {
     @media (prefers-color-scheme: dark) {
       body:not([class~='light-theme']) & {
         @content;
       }
     }
-    .dark-theme &{
+    .dark-theme & {
       @content;
     }
   } @else {
