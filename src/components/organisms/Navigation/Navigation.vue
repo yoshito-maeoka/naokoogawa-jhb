@@ -5,20 +5,19 @@
     </button>
     <nav class="navigation" :class="{ visible }">
       <ul>
-        <li><a href="#the-book">Book</a></li>
-        <li><a href="#the-exhibition">the exhibition</a></li>
-        <li><a href="#shop-coming">shop coming soon</a></li>
+        <li><a href="#the-book" :tabindex="visible ? undefined : '-1'">Book</a></li>
+        <li><a href="#the-exhibition" :tabindex="visible ? undefined : '-1'">the exhibition</a></li>
+        <li><a href="#shop-coming" :tabindex="visible ? undefined : '-1'">shop coming soon</a></li>
       </ul>
     </nav>
-    <ul class="languages" :class="{ language }">
-      <li>JA</li>
-      <li>EN</li>
-    </ul>
+    <LanguageMenu />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { defineComponent, onMounted, ref } from 'vue';
+import LanguageMenu from '@/components/molecules/LanguageMenu/LanguageMenu.vue'
+
 /* Data */
 const userTheme = ref('light-theme');
 
@@ -54,8 +53,6 @@ onMounted(() => {
   /*
   const windowsUserTheme = getMediaPreference();
   const localStorageTheme = localStorage.getItem("user-theme");
-  */
-  const localStorageTheme = 'light-theme';
   if (localStorageTheme) {
     setTheme(localStorageTheme);
   } else if (windowsUserTheme) {
@@ -63,6 +60,8 @@ onMounted(() => {
   } else {
     setTheme(userTheme.value);
   }
+  */
+  setTheme('light-theme');
 });
 
 const visible = ref(false);
@@ -110,12 +109,6 @@ const toggleMenu = () => {
         transition: all 0.5s;
       }
     }
-  }
-
-  .languages {
-    position: absolute;
-    top: 20px;
-    right: 20px;
   }
 
   @include bp-max-medium() {
