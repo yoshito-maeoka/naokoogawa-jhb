@@ -21,4 +21,11 @@ import ShopComingSoon from '@/components/templates/ShopComingSoon/ShopComingSoon
 .burger-menu {
   top: 0;
 }
+#app > section.wrapper {
+  width: 100vw;
+  // height: 100vh;
+  background-image: url('/images/top-background.jpg');
+  background-position: center;
+  background-attachment: fixed
+}
 </style>
