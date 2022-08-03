@@ -1,11 +1,11 @@
 <template>
   <Navigation />
-  <section class="wrapper">
+  <div class="wrapper">
     <HeroLogoSection />
     <BookSection />
     <ExhibitionSection />
     <ShopComingSoon />
-  </section>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -21,11 +21,11 @@ import ShopComingSoon from '@/components/templates/ShopComingSoon/ShopComingSoon
 .burger-menu {
   top: 0;
 }
-#app > section.wrapper {
+#app > .wrapper {
   width: 100vw;
   // height: 100vh;
   background-image: url('/images/top-background.jpg');
   background-position: center;
-  background-attachment: fixed
+  background-attachment: fixed;
 }
 </style>

@@ -1,5 +1,5 @@
-import en from './en.json';
-import ja from './ja.json';
+import en from './en';
+import ja from './ja';
 
 import { createI18n } from 'vue-i18n';
 

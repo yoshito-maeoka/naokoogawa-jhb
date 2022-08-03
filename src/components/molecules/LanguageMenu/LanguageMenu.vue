@@ -1,7 +1,7 @@
 <template>
-  <ul class="languages" :class="{ language }">
-    <li><a href="#" @click="onLanguageSelected('ja')">JA</a></li>
-    <li><a href="#" @click="onLanguageSelected('en')">EN</a></li>
+  <ul class="languages">
+    <li :class="isActive('ja')"><a href="#" @click.prevent="onLanguageSelected('ja')">JA</a></li>
+    <li :class="isActive('en')"><a href="#" @click.prevent="onLanguageSelected('en')">EN</a></li>
   </ul>
 </template>
 
@@ -12,10 +12,15 @@ import { useI18n } from 'vue-i18n';
 const language = ref('ja');
 const { locale } = useI18n();
 
+const isActive = (lang: string) : string | undefined => {
+  return language.value === lang ? 'active' : undefined;
+};
+
 const onLanguageSelected = (lang: string) => {
   console.log(`${lang}clicked`);
   language.value = lang;
   locale.value = lang;
+  return false;
 };
 </script>
 
@@ -24,9 +29,15 @@ const onLanguageSelected = (lang: string) => {
   position: absolute;
   top: 20px;
   right: 20px;
+  > li {
+    padding-bottom: 10px;
 
-  a {
-    cursor: pointer;
+    &.active {
+      border-bottom: 2px solid var(--color);
+    }
+    a {
+      cursor: pointer;
+    }
   }
 }
 

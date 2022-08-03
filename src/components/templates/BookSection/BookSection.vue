@@ -1,85 +1,38 @@
 <template>
-  <div id="the-book">
-    <h2>Book</h2>
-  </div>
+  <section id="the-book">
+    <div class="wrapper">
+      <h2>Jewelry Hunting -Book-</h2>
+      <div class="what-is-jh">
+        <h3 v-html="$t('what-is-jewelry-hunting.title')"/>
+        <p v-html="$t('what-is-jewelry-hunting.body-0')" />
+        <p v-html="$t('what-is-jewelry-hunting.body-1')" />
+        <p v-html="$t('what-is-jewelry-hunting.body-2')" />
+      </div>
+      <div>
+        <h3 v-html="$t('contributors.title')"/>
+        <div>
+          <h4 v-html="$t('contributors.aslan.name')" />
+          <p v-html="$t('contributors.aslan.description')" />
+        </div>
+        <div>
+          <h4 v-html="$t('contributors.hosoya.name')" />
+          <p v-html="$t('contributors.hosoya.description')" />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
-<script setup lang="ts">
-// import here what you need
-// import something from 'somewhere'
-//    :
-//    :
-
-// define props
-// define with const, if you use props in script.
-// const props = defineProps({
-//     :
-// if not, don't define with const
-// defineProps({
-//   todo: {
-//     type: Object as PropType<ToDo>,
-//     required: true,
-//   },
-// });
-
-// define ref
-// const completed = ref(props.todo.isComplete);
-//
-// const priority = ref(props.todo.priority ?? 0);
-
-// define computed
-// const dataAsUrl = computed(() => (
-//   (props.todo.dataType === 'file')
-//     ? `https://host/${props.todo.data}`
-//     : `https://host/search/${decodeData(props.todo.data)}`
-// ));
-//  :
-//  :
-//  :
-
-// define emits
-// const emit = defineEmits(['incrementPriority', 'decrementPriority']);
-//
-// const incrementPriority = () : void => {
-//   emit('incrementPriority');
-// };
-//
-// const decrementPriority = () : void => {
-//   emit('decrementPriority');
-// };
-//  :
-//  :
-//  :
-
-// methods as you like
-// const doSomething = () : void => {
-//   console.log('hello');
-// };
-//  :
-//  :
-//  :
-
-// watch
-// import { watch } from "vue";
-//
-// watch(() => [...level.value], (currentValue, oldValue) => {
-//   console.log(currentValue);
-//   console.log(oldValue);
-// });
-
-// Livecycle hooks
-//   onMounted(), onUpdated(), onUnmounted(), onBeforeMount(), onBeforeUpdate(), onBeforeUnmount(),
-//   onErrorCaptured(), onRenderTracked(), onRenderTriggered(), onActivated(), onDeactivated(),
-//   onServerPrefetch()
-//
-// import { onMounted } from 'vue'
-// onMounted(() => {
-//   console.log('mounted')
-// })
-//  :
-//  :
-</script>
-
 <style lang="scss">
-// .book-section {}
+#the-book {
+  .wrapper {
+    text-align: left;
+    max-width: 780px;
+    margin: 0 auto;
+
+    .what-is-jh p:last-of-type {
+      text-align: right;
+    }
+  }
+}
 </style>
