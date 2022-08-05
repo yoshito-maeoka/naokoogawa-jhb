@@ -5,6 +5,7 @@
     <BookSection />
     <ExhibitionSection />
     <ShopComingSoon />
+    <JhbGallery />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import HeroLogoSection from '@/components/templates/HeroLogoSection/HeroLogoSect
 import BookSection from '@/components/templates/BookSection/BookSection.vue';
 import ExhibitionSection from '@/components/templates/ExhibitionSection/ExhibitionSection.vue';
 import ShopComingSoon from '@/components/templates/ShopComingSoon/ShopComingSoon.vue';
+import JhbGallery from '@/components/templates/JhbGallery/JhbGallery.vue';
 </script>
 
 <style lang="scss" scoped>
