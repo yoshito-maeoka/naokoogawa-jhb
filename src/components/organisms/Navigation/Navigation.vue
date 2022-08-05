@@ -71,10 +71,14 @@ const toggleMenu = () => {
 </script>
 
 <style scoped lang="scss">
+
 .burger-menu {
+  --nav-color: #ffffff;
+
   position: fixed;
   padding: 20px;
   width: 100%;
+  color: var(--nav-color);
 
   button {
     position: relative;
@@ -82,8 +86,8 @@ const toggleMenu = () => {
     display: block;
     width: 41px;
     height: 27px;
-    border-top: 3px solid var(--color);
-    border-bottom: 3px solid var(--color);
+    border-top: 3px solid var(--nav-color);
+    border-bottom: 3px solid var(--nav-color);
     transition: all 0.5s;
 
     &:before {
@@ -91,7 +95,7 @@ const toggleMenu = () => {
       content: '';
       width: 54.88%;
       height: 3px;
-      background-color: var(--color);
+      background-color: var(--nav-color);
       position: absolute;
       left: 0;
       top: 9px;

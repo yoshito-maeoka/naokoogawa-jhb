@@ -33,7 +33,7 @@ const onLanguageSelected = (lang: string) => {
     padding-bottom: 10px;
 
     &.active {
-      border-bottom: 2px solid var(--color);
+      border-bottom: 2px solid var(--nav-color);
     }
     a {
       cursor: pointer;
