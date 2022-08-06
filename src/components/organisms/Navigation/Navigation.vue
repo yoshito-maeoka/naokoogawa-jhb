@@ -5,9 +5,15 @@
     </button>
     <nav class="navigation" :class="{ visible }">
       <ul>
-        <li><a href="#the-book" :tabindex="visible ? undefined : '-1'">Book</a></li>
-        <li><a href="#the-exhibition" :tabindex="visible ? undefined : '-1'">the exhibition</a></li>
-        <li><a href="#shop-coming" :tabindex="visible ? undefined : '-1'">shop coming soon</a></li>
+        <li>
+          <a href="#the-book" :tabindex="visible ? undefined : '-1'">{{ $t('navigation.book') }}</a>
+        </li>
+        <li>
+          <a href="#the-exhibition" :tabindex="visible ? undefined : '-1'">{{ $t('navigation.exhibition') }}</a>
+        </li>
+        <li>
+          <a href="#shop-coming-soon" :tabindex="visible ? undefined : '-1'">{{ $t('navigation.shop') }}</a>
+        </li>
       </ul>
     </nav>
     <LanguageMenu />

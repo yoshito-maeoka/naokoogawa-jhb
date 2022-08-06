@@ -1,4 +1,9 @@
 export default {
+  navigation: {
+    book: '- Book -',
+    exhibition: 'Launch Event',
+    shop: 'Online Sales',
+  },
   'what-is-jewelry-hunting': {
     title: 'what is <em>Jewelry Hunting</em>?',
     'body-0': `<em>Jewelry Hunting</em> is a project in which people discover the accidental effect of light in everyday scenes, project it onto the surface of the body and wear it as ‘jewellery’.<br/>
@@ -43,11 +48,6 @@ export default {
       `,
     },
   },
-  'shop-coming-soon': {
-    title: 'Online sales',
-    body: `starts 1st November 2022<br/>
-      <a href="https://shop.naokoogawa.com">shop.naokoogawa.com</a>`,
-  },
   exhibition: {
     title: 'Launch Event',
     exhibition: `Naoko Ogawa Solo Exhibition 'Reflection'`,
@@ -55,5 +55,10 @@ export default {
     venue: `Venue: <a href="https://deuxpoissons.com" target="_blank">gallery deux poisson (Ebisu, Tokyo)</a>
       (<a href="https://g.page/gallerydeuxpoissons?share" target="_blank">Map</a>)<br/>
       `,
+  },
+  'shop-coming-soon': {
+    title: 'Online Sales',
+    body: `starts 1st November 2022<br/>
+      <a href="https://shop.naokoogawa.com">shop.naokoogawa.com</a>`,
   },
 };

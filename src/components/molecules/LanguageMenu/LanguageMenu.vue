@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const language = ref('ja');
@@ -16,12 +16,19 @@ const isActive = (lang: string) : string | undefined => {
   return language.value === lang ? 'active' : undefined;
 };
 
+
 const onLanguageSelected = (lang: string) => {
-  console.log(`${lang}clicked`);
+  localStorage.setItem('lang', lang);
   language.value = lang;
   locale.value = lang;
   return false;
 };
+
+onMounted(() => {
+  const lang = localStorage.getItem('lang') ?? window.navigator.language;
+  onLanguageSelected(lang);
+});
+
 </script>
 
 <style lang="scss">

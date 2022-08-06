@@ -4,6 +4,10 @@
   font-family: Rubik-Regular, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--color);
   background: var(--background);
@@ -81,7 +85,7 @@ a {
 }
 
 p {
-  line-height: 1.4rem;
+  line-height: 1.56rem;
   margin: 10px 0;
 }
 

@@ -22,6 +22,11 @@
     text-align: left;
     max-width: 780px;
     margin: 40px auto;
+
+    @include bp-max-medium() {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 }
 </style>

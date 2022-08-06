@@ -1,4 +1,9 @@
 export default {
+  navigation: {
+    book: '- Book -',
+    exhibition: 'Launch Event',
+    shop: 'Online Sales',
+  },
   'what-is-jewelry-hunting': {
     title: 'ジュエリー・ハンティングとは',
     'body-0': `ジュエリー・ハンティングは、日常の中で偶然に発見した光の効果等を、身体の表面に投影させ「ジュエリー」として身にまとう体験をするプロジェクトです。
