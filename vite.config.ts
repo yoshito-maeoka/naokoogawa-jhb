@@ -12,6 +12,9 @@ export default defineConfig({
     },
   },
   define: { 'process.env': {} },
+  build: {
+    outDir: './docs'
+  },
   css: {
     preprocessorOptions: {
       scss: {
