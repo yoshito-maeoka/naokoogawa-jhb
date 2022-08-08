@@ -22,7 +22,7 @@ export default {
     'body-2': '小川直子',
   },
   contributors: {
-    title: '-Book- コントリビューター',
+    title: 'コントリビューター',
     aslan: {
       name: 'Eylül Aslan／エイリュル・アスラン',
       description: `写真家。1990年生まれ、トルコ／イスタンブールで育ち、イスタンブール大学でフランス語と文学を学んだ後、ドイツのベルリンに移り住む。
