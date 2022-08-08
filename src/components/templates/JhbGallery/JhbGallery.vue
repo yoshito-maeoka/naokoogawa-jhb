@@ -15,9 +15,21 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  background-image: linear-gradient(to top,
+    white 0%,
+    rgba(255, 255, 255, 0.8) 35%,
+    rgba(255, 255, 255, 0.7) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
 
   @include bp-max-medium() {
     padding-top: 20vh;
+    background-image: linear-gradient(to top,
+      white 0%,
+      rgba(255, 255, 255, 0.9) 25%,
+      rgba(255, 255, 255, 0.8) 85%,
+      rgba(0, 0, 0, 0) 100%
+    );
   }
 
   img {
