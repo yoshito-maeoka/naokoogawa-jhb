@@ -1,8 +1,14 @@
 <template>
   <section id="the-exhibition" class="exhibition-section">
     <div class="wrapper">
-      <h2>{{ $t('exhibition.title') }}</h2>
-      <p>
+      <h2
+        v-element-visibility="(state) => appeared.onElementVisibility(state, 0)"
+        :class="{ appeared: appeared.inView(0) }"
+      >{{ $t('exhibition.title') }}</h2>
+      <p
+        v-element-visibility="(state) => appeared.onElementVisibility(state, 1)"
+        :class="{ appeared: appeared.inView(1) }"
+      >
         <span> {{ $t('exhibition.exhibition') }} </span><br/>
         <span v-html="$t('exhibition.date')" /><br/>
         <span v-html="$t('exhibition.venue')" />
@@ -11,7 +17,10 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
+import { createVisibleStates, onElementVisibility, inView } from '@/lib/composable/inView';
+import { vElementVisibility } from '@vueuse/components';
+const appeared = createVisibleStates(2);
 </script>
 
 <style lang="scss">
@@ -26,6 +35,19 @@
     @include bp-max-medium() {
       margin-left: 20px;
       margin-right: 20px;
+    }
+
+    h2 {
+      @include in-view();
+    }
+
+    p {
+      @include in-view();
+    }
+
+    a[target=_blank] {
+      padding-right: 1.2em;
+      background-size: 17px;
     }
   }
 }
