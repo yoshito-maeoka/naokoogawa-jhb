@@ -93,6 +93,11 @@ const appeared = createVisibleStates(7);
       div {
         margin-bottom: 20px;
         @include in-view();
+
+        h4 a[target="_blank"] {
+          padding-right: 1.5em;
+          background-size: 17px;
+        }
       }
     }
   }

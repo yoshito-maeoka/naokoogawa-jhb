@@ -44,6 +44,11 @@ const appeared = createVisibleStates(2);
     p {
       @include in-view();
     }
+
+    a[target=_blank] {
+      padding-right: 1.2em;
+      background-size: 17px;
+    }
   }
 }
 </style>

@@ -14,5 +14,8 @@
   padding-bottom: 280px;
   color: var(--color-light);
   background-color: var(--background-light);
+  ul li {
+    margin: 0 30px;
+  }
 }
 </style>
