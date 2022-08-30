@@ -5,7 +5,7 @@ import { join } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/naokoogawa-jhb/',
+  base: '/',
   resolve: {
     alias: {
       '@': join(__dirname, 'src'),
@@ -15,7 +15,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/assets/scss/tools/breakpoints.scss";`,
+        additionalData: `@import "@/assets/scss/includes.scss";`,
       },
     },
   },

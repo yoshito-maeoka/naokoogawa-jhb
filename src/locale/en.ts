@@ -5,7 +5,7 @@ export default {
     shop: 'Online Sales',
   },
   'what-is-jewelry-hunting': {
-    title: 'what is <em>Jewelry Hunting</em>?',
+    title: 'What is <em>Jewelry Hunting</em>?',
     'body-0': `<em>Jewelry Hunting</em> is a project in which people discover the accidental effect of light in everyday scenes, project it onto the surface of the body and wear it as ‘jewellery’.<br/>
       The ‘jewellery’ is recorded by the hunter according to the conditions under which it appears (date, time, location, weather, etc.) and this information can be shared with others. By visiting the site according to the conditions, the visitor can actually wear the ‘jewellery’ and visually relive the sensation of owning it. Later, the experiencer will find their own perspective has changed, as their eyes are drawn to the effects of light that they find beautiful themselves in their daily lives.<br/>
       The ‘jewellery’ is not inherent in materials, but in the effects of light and the instructions about how to wear it. Owning ‘jewellery’ that only exists for a moment under certain conditions brings a sense of joy and elation, as only the owner can sense the existence of ‘jewellery’. The essential action of the project is to question accepted ideas of beauty and the value of ownership through the experience of hunting ‘jewellery’, and to rediscover one’s own value.`,
@@ -16,9 +16,9 @@ export default {
     'body-2': `Naoko Ogawa`,
   },
   contributors: {
-    title: 'contributors',
+    title: 'Contributors',
     aslan: {
-      name: 'Eylül Aslan',
+      name: '<a href="https://www.eylulaslan.com/" target=_blank>Eylül Aslan</a>',
       description: `A photography artist. Born in 1990 and raised in Istanbul, Turkey, where she went on to study French Language
         and Literature at Istanbul University, Aslan eventually moved to Berlin, Germany. After 6 years, she moved to Vienna
         where she continues to live and work.<br/>
