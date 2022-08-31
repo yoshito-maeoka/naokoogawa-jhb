@@ -35,7 +35,7 @@ const appeared = createVisibleStates(3);
 
   h2 {
     font-size: 32px;
-    margin: 20px;
+    margin: 20px auto;
     @include in-view();
   }
   em {
@@ -45,7 +45,7 @@ const appeared = createVisibleStates(3);
   }
   p {
     font-weight: bold;
-    margin: 35px;
+    margin: 35px auto;
     @include in-view();
   }
 }
