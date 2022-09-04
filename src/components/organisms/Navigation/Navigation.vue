@@ -4,15 +4,21 @@
       <span class="sr-only">toggle menu</span>
     </button>
     <nav class="navigation" :class="{ visible }">
-      <ul>
+      <ul @click="toggleMenu">
         <li>
-          <a href="#the-book" :tabindex="visible ? undefined : '-1'">{{ $t('navigation.book') }}</a>
+          <a href="#the-book" :tabindex="visible ? undefined : '-1'" @click="toggleMenu">
+            {{ $t('navigation.book') }}
+          </a>
         </li>
         <li>
-          <a href="#the-exhibition" :tabindex="visible ? undefined : '-1'">{{ $t('navigation.exhibition') }}</a>
+          <a href="#the-exhibition" :tabindex="visible ? undefined : '-1'" @click="toggleMenu">
+            {{ $t('navigation.exhibition') }}
+          </a>
         </li>
         <li>
-          <a href="#shop-coming-soon" :tabindex="visible ? undefined : '-1'">{{ $t('navigation.shop') }}</a>
+          <a href="#shop-coming-soon" :tabindex="visible ? undefined : '-1'" @click="toggleMenu">
+            {{ $t('navigation.shop') }}
+          </a>
         </li>
       </ul>
     </nav>
@@ -144,6 +150,26 @@ const toggleMenu = () => {
   &.visible {
     top: 0;
     transition: all 0.5s;
+
+    @include bp-max-medium() {
+      background-color: var(--color);
+      margin: 0;
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      left: 0;
+
+      ul {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        li {
+          margin: 30vw 0;
+          color: var(--color-dark);
+        }
+      }
+    }
   }
 
   margin: var(--gap) 0;
