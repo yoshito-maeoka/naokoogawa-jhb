@@ -4,7 +4,9 @@
       <h2
         v-element-visibility="(state) => appeared.onElementVisibility(state, 0)"
         :class="{ appeared: appeared.inView(0) }"
-      >{{ $t('exhibition.title') }}</h2>
+      >
+        {{ $t('exhibition.title') }}
+      </h2>
       <p
         v-element-visibility="(state) => appeared.onElementVisibility(state, 1)"
         :class="{ appeared: appeared.inView(1) }"
@@ -18,8 +20,8 @@
 </template>
 
 <script lang="ts" setup>
-import { createVisibleStates, onElementVisibility, inView } from '@/lib/composable/inView';
 import { vElementVisibility } from '@vueuse/components';
+import { createVisibleStates, onElementVisibility, inView } from '@/lib/composable/inView';
 const appeared = createVisibleStates(2);
 </script>
 
