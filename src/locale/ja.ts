@@ -14,7 +14,7 @@ export default {
       既存の美意識や所有の価値観を問い直し、自らの価値を再発見していくところに、このプロジェクトの本質的な作用があります。`,
     'title-2': 'ジュエリー・ハンティング・ブック',
     'body-1': `このプロジェクトは、2011年の発表以来、様々なフォーマットで展開してきました。今回発表される「ブック」では、ジュエリー・ハンティングのアイデアが
-      参加者にどのような影響を与えたか、読者はその心理的変化を写真と文章で追体験することができます。イスタンブール出身の写真家Eylül A slan（エイリュル・アスラン）と、
+      参加者にどのような影響を与えたか、読者はその心理的変化を写真と文章で追体験することができます。イスタンブール出身の写真家Eylül Aslan（エイリュル・アスラン）と、
       日本で活動する翻訳家／文筆家の細谷みゆきが、それぞれ写真と文章で体験を綴ります。彼女たちに依頼した背景には、日本とトルコにおける女性の社会的地位の近似があります。
       <a href="https://jp.weforum.org/reports/gender-gap-2020-report-100-years-pay-equality/" target="_blank">2020年のジェンダーギャップ指数ではトルコ130位、日本121位と今も性差が色濃く残る社会で</a>、彼女たちは女性として生きてきました。この二人の寄稿者の体験を通して、
       読者が自分の価値観を取り戻すきっかけとなり、日々の生活を少しでも豊かにすることに繋がればと願います。その後、自分の体験や思いを周りの人と共有し、
@@ -50,7 +50,7 @@ export default {
   },
   exhibition: {
     title: '先行発売',
-    exhibition: '小川直子 個展 「Reflection」',
+    exhibition: '<a href="https://deuxpoissons.com/exhibition/reflection-naoko-ogawa-exhibition/" target="_blank">小川直子 個展 「Reflection」</a>',
     date: '期間　2022年10月7日 - 23日',
     venue: `会場　<a href="https://deuxpoissons.com" target="_blank">ギャラリー・ドゥ・ポワソン (東京・恵比寿)</a>
       (<a href="https://g.page/gallerydeuxpoissons?share" target="_blank">地図</a>)<br/>

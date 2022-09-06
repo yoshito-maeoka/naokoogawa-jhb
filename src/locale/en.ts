@@ -50,7 +50,7 @@ export default {
   },
   exhibition: {
     title: 'Launch Event',
-    exhibition: `Naoko Ogawa Solo Exhibition 'Reflection'`,
+    exhibition: `<a href="https://deuxpoissons.com/exhibition/reflection-naoko-ogawa-exhibition/" target="_blank">Naoko Ogawa Solo Exhibition 'Reflection'</a>`,
     date: 'Date: 7th -23th October 2022',
     venue: `Venue: <a href="https://deuxpoissons.com" target="_blank">gallery deux poisson (Ebisu, Tokyo)</a>
       (<a href="https://g.page/gallerydeuxpoissons?share" target="_blank">Map</a>)<br/>
