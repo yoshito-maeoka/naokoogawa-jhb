@@ -4,13 +4,13 @@
       <h2
         v-element-visibility="(state) => appeared.onElementVisibility(state, 0)"
         :class="{ appeared: appeared.inView(0) }"
-        v-html="$t('exhibition.title') "
+        v-html="$t('exhibition.title')"
       />
       <p
         v-element-visibility="(state) => appeared.onElementVisibility(state, 1)"
         :class="{ appeared: appeared.inView(1) }"
       >
-        <span> {{ $t('exhibition.exhibition') }} </span><br/>
+        <span v-html="$t('exhibition.exhibition')" /><br/>
         <span v-html="$t('exhibition.date')" /><br/>
         <span v-html="$t('exhibition.venue')" />
       </p>
