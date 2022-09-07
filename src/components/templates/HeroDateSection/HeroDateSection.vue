@@ -4,7 +4,12 @@
       v-element-visibility="(state) => appeared.onElementVisibility(state, 0)"
       :class="{ appeared: appeared.inView(0) }"
     >
-      &dash; Book &dash; Launch Event:<em>'Reflection' Naoko Ogawa Solo Exhibition</em>
+      &dash; Book &dash; Launch Event:
+      <em>
+        <a href="https://deuxpoissons.com/exhibition/reflection-naoko-ogawa-exhibition/" target="_blank">
+          'Reflection' Naoko Ogawa Solo Exhibition
+        </a>
+      </em>
     </h2>
     <p
       v-element-visibility="(state) => appeared.onElementVisibility(state, 1)"
