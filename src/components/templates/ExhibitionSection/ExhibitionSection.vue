@@ -4,9 +4,8 @@
       <h2
         v-element-visibility="(state) => appeared.onElementVisibility(state, 0)"
         :class="{ appeared: appeared.inView(0) }"
-      >
-        {{ $t('exhibition.title') }}
-      </h2>
+        v-html="$t('exhibition.title')"
+      />
       <p
         v-element-visibility="(state) => appeared.onElementVisibility(state, 1)"
         :class="{ appeared: appeared.inView(1) }"
