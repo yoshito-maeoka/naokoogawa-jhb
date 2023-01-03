@@ -46,13 +46,14 @@ export default {
   'shop-coming-soon': {
     title: 'オンライン販売',
     body: `2022年11月1日より開始<br/>
-      <a href="https://shop.naokoogawa.com">shop.naokoogawa.com</a>`,
+      <a href="https://shop.naokoogawa.com/jewelryhunting">shop.naokoogawa.com/jewelryhunting</a>`,
   },
   exhibition: {
     title: '先行発売',
-    exhibition: '<a href="https://deuxpoissons.com/exhibition/reflection-naoko-ogawa-exhibition/" target="_blank">小川直子 個展 「Reflection」</a>',
-    date: '期間　2022年10月7日 - 23日',
-    venue: `会場　<a href="https://deuxpoissons.com" target="_blank">ギャラリー・ドゥ・ポワソン (東京・恵比寿)</a>
+    exhibition:
+      '<a href="https://deuxpoissons.com/exhibition/reflection-naoko-ogawa-exhibition/" target="_blank">小川直子 個展 「Reflection」</a>',
+    date: '期間 2022年10月7日 - 23日',
+    venue: `会場 <a href="https://deuxpoissons.com" target="_blank">ギャラリー・ドゥ・ポワソン (東京・恵比寿)</a>
       (<a href="https://g.page/gallerydeuxpoissons?share" target="_blank">地図</a>)<br/>
       `,
   },

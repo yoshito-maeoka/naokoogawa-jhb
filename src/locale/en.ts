@@ -59,6 +59,6 @@ export default {
   'shop-coming-soon': {
     title: 'Online Sales',
     body: `starts 1st November 2022<br/>
-      <a href="https://shop.naokoogawa.com">shop.naokoogawa.com</a>`,
+      <a href="https://shop.naokoogawa.com/jewelryhunting">shop.naokoogawa.com/jewelryhunting</a>`,
   },
 };
